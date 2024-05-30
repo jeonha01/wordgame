@@ -1,0 +1,42 @@
+body {
+    background-color: lightblue;
+}
+
+.look {
+    box-sizing: border-box;
+    width: 450px;
+    height: 100px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#look-word {
+    border-radius: 10px 10px 0px 0px;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+.words {
+    text-align: center;
+    margin-top: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+td {
+    border: 1px solid black;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+}
+
+td:hover {
+    transform: scale(1.4);
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A 단계3_28(상)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h3 style="text-align: center;">가로, 세로, 대각선 방향에 단어들이 숨어 있습니다.<br>
+    <보기>의 단어를 찾아 클릭 하세요.
+  </h3>
+
+  <div class="look">
+    <div id="look-word">
+      <보기>
+    </div>
+    <div class="words">
+      학교 / 역도 / 프랑스 / 공부 / 고양이 / 가야금<br>
+      올챙이 / 자동차 / 운동 / 캄보디아 / 에콰도르
+    </div>
+  </div>
+
+  <table onclick="idExtraction(event)" style="font-weight: bolder;">
+    <tr>
+      <td id="td00">콰</td>
+      <td id="td01">야</td>
+      <td id="td02">도</td>
+      <td id="td03">치</td>
+      <td id="td04">무</td>
+      <td id="td05">학</td>
+      <td id="td06">리</td>
+      <td id="td07">골</td>
+      <td id="td08">가</td>
+    </tr>
+    <tr>
+      <td id="td10">나</td>
+      <td id="td11">개</td>
+      <td id="td12">이</td>
+      <td id="td13">기</td>
+      <td id="td14">이</td>
+      <td id="td15">역</td>
+      <td id="td16">교</td>
+      <td id="td17">지</td>
+      <td id="td18">올</td>
+    </tr>
+    <tr>
+      <td id="td20">꽃</td>
+      <td id="td21">게</td>
+      <td id="td22">구</td>
+      <td id="td23">동</td>
+      <td id="td24">심</td>
+      <td id="td25">에</td>
+      <td id="td26">알</td>
+      <td id="td27">구</td>
+      <td id="td28">챙</td>
+    </tr>
+    <tr>
+      <td id="td30">조</td>
+      <td id="td31">정</td>
+      <td id="td32">원</td>
+      <td id="td33">리</td>
+      <td id="td34">철</td>
+      <td id="td35">사</td>
+      <td id="td36">콰</td>
+      <td id="td37">지</td>
+      <td id="td38">이</td>
+    </tr>
+    <tr>
+      <td id="td40">코</td>
+      <td id="td41">고</td>
+      <td id="td42">콰</td>
+      <td id="td43">려</td>
+      <td id="td44">할</td>
+      <td id="td45">이</td>
+      <td id="td46">지</td>
+      <td id="td47">도</td>
+      <td id="td48">동</td>
+    </tr>
+    <tr>
+      <td id="td50">고</td>
+      <td id="td51">감</td>
+      <td id="td52">정</td>
+      <td id="td53">적</td>
+      <td id="td54">린</td>
+      <td id="td55">사</td>
+      <td id="td56">가</td>
+      <td id="td57">은</td>
+      <td id="td58">르</td>
+    </tr>
+    <tr>
+      <td id="td60">공</td>
+      <td id="td61">부</td>
+      <td id="td62">운</td>
+      <td id="td63">고</td>
+      <td id="td64">백</td>
+      <td id="td65">프</td>
+      <td id="td66">야</td>
+      <td id="td67">금</td>
+      <td id="td68">이</td>
+    </tr>
+    <tr>
+      <td id="td70">황</td>
+      <td id="td71">현</td>
+      <td id="td72">철</td>
+      <td id="td73">양</td>
+      <td id="td74">해</td>
+      <td id="td75">랑</td>
+      <td id="td76">금</td>
+      <td id="td77">연</td>
+      <td id="td78">아</td>
+    </tr>
+    <tr>
+      <td id="td80">아</td>
+      <td id="td81">경</td>
+      <td id="td82">역</td>
+      <td id="td83">이</td>
+      <td id="td84">느</td>
+      <td id="td85">스</td>
+      <td id="td86">자</td>
+      <td id="td87">디</td>
+      <td id="td88">캄</td>
+    </tr>
+    <tr>
+      <td id="td90">캄</td>
+      <td id="td91">박</td>
+      <td id="td92">성</td>
+      <td id="td93">도</td>
+      <td id="td94">박</td>
+      <td id="td95">은</td>
+      <td id="td96">새</td>
+      <td id="td97">동</td>
+      <td id="td98">보</td>
+    </tr>
+    <tr>
+      <td id="td100">세</td>
+      <td id="td101">경</td>
+      <td id="td102">캄</td>
+      <td id="td103">보</td>
+      <td id="td104">디</td>
+      <td id="td105">아</td>
+      <td id="td106">타</td>
+      <td id="td107">쿠</td>
+      <td id="td108">차</td>
+    </tr>
+    <tr>
+      <td id="td110">운</td>
+      <td id="td111">동</td>
+      <td id="td112">구</td>
+      <td id="td113">둔</td>
+      <td id="td114">님</td>
+      <td id="td115">운</td>
+      <td id="td116">부</td>
+      <td id="td117">처</td>
+      <td id="td118">상</td>
+    </tr>
+  </table>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
