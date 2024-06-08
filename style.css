@@ -18,8 +18,17 @@ body {
 }
 
 .words {
-    text-align: center;
     margin-top: 15px;
+}
+
+.words1{
+    align-items: center;
+    justify-content: center;
+}
+
+.words2{
+    align-items: center;
+    justify-content: center;
 }
 
 table {
